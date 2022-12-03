@@ -10,6 +10,8 @@ fail, which should give me the answer to my version of the puzzle.
 ## Language for each day
 
 - 1: OCaml
+- 2: Go
+- 3: Elixir
 
 ## OCaml
 
