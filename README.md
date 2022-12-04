@@ -12,6 +12,7 @@ fail, which should give me the answer to my version of the puzzle.
 - 1: OCaml
 - 2: Go
 - 3: Elixir
+- 4: Ocaml
 
 ## OCaml
 
@@ -21,4 +22,7 @@ have a simple setup to use inline tests, relying on tools like
 `ppx_inline_test`, `ppx_assert`, and `ppx_expect` (so this repo
 assumes that those tools are installed).
 
+# C
 
+I've started implementing already solved problems in C, included in
+the same folder for the day.
