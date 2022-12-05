@@ -7,12 +7,16 @@ tests, and sometimes tests of my own for some implementation details.
 Then I write a test that reads from the actual input file and let it
 fail, which should give me the answer to my version of the puzzle.
 
+I also try to avoid using anything that's beyond the stdlib of the
+language I'm using to solve a problem.
+
 ## Language for each day
 
 - 1: OCaml
 - 2: Go
 - 3: Elixir
-- 4: Ocaml
+- 4: OCaml
+- 5: OCaml
 
 ## OCaml
 
@@ -21,6 +25,9 @@ For OCaml, I'm using a barebones
 have a simple setup to use inline tests, relying on tools like
 `ppx_inline_test`, `ppx_assert`, and `ppx_expect` (so this repo
 assumes that those tools are installed).
+
+I'm using OCaml 4.14 and make an exception on using external libraries
+just for the inline tests.
 
 # C
 
