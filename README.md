@@ -15,8 +15,7 @@ language I'm using to solve a problem.
 - 1: OCaml
 - 2: Go
 - 3: Elixir
-- 4: OCaml
-- 5: OCaml
+- 4-6: OCaml
 
 ## OCaml
 
