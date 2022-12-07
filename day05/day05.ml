@@ -52,11 +52,7 @@ let read_input filename =
     (fun ic ->
       (* The use of [input_seq] here relies on side effects, acting as
          an iterator over the lines of the input *)
-      let input_seq =
-        Seq.forever (fun () -> In_channel.input_line ic)
-        |> Seq.take_while Option.is_some
-        |> Seq.map Option.get
-      in
+      let input_seq = Seq.of_dispenser (fun () -> In_channel.input_line ic) in
       (* Read initial crate setup *)
       let stacks =
         input_seq

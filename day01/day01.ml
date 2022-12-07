@@ -20,9 +20,7 @@ let elves_of_lines_seq seq =
 let read_input filename =
   In_channel.with_open_text filename
     (fun ic ->
-      Seq.forever (fun () -> In_channel.input_line ic)
-      |> Seq.take_while Option.is_some
-      |> Seq.map Option.get
+      Seq.of_dispenser (fun () -> In_channel.input_line ic)
       |> elves_of_lines_seq)
 
 let%test_unit _ =
