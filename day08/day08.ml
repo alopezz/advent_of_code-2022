@@ -11,7 +11,7 @@ let locate coord {grid; _} =
 let parse_input lines =
   let height = ref 0 in
   let width = ref 0 in
-  let grid = Hashtbl.create 1000 in
+  let grid = Hashtbl.create (100*1000) in
   Seq.take_while (fun line -> String.length line > 0) lines
   |> Seq.iteri
     (fun y line ->
