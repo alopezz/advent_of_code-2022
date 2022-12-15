@@ -1,4 +1,10 @@
 (library
  (name day15)
+ (modules day15)
  (inline_tests (deps input example_input))
  (preprocess (pps ppx_inline_test ppx_assert ppx_expect)))
+
+(executable
+ (name main)
+ (modules main)
+ (libraries day15 unix))
