@@ -10,7 +10,7 @@ let main () =
     (fun () -> Day09.solve_part1 instructions)
   |> Printf.printf "Part 1: %d\n";
   time "Time part 2"
-    (fun () -> Day09.solve_part1 instructions)
+    (fun () -> Day09.solve_part2 instructions)
   |> Printf.printf "Part 2: %d\n"
 
 
