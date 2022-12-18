@@ -3,3 +3,8 @@
  (modules day18)
  (inline_tests (deps input))
  (preprocess (pps ppx_inline_test ppx_assert ppx_expect)))
+
+(executable
+ (name main)
+ (modules main)
+ (libraries day18 unix))
