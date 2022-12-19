@@ -1,0 +1,5 @@
+(library
+ (name day19)
+ (modules day19)
+ (inline_tests (deps input))
+ (preprocess (pps ppx_inline_test ppx_assert ppx_expect)))
