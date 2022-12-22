@@ -1,0 +1,7 @@
+(library
+ (name day22)
+ (inline_tests (deps input example_input))
+ (preprocess (pps ppx_inline_test ppx_assert ppx_expect)))
+
+(ocamlyacc parser)
+(ocamllex lexer)
